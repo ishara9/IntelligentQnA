@@ -15,17 +15,16 @@ Benifit of having ontology is it allowes us to infer new knowledge from the exis
 
 #Tools required
 
-1. Parsey McParseface server - which allowes to convert the sentences in natural language into parse trees.
+1. [Parsey McParseface server](https://hub.docker.com/r/andersrye/parsey-mcparseface-server/) - which allowes to convert the sentences in natural language into parse trees.
 Run this server locally to access api calls using HTTP POST requests.
-Link : https://hub.docker.com/r/andersrye/parsey-mcparseface-server/
 
-2. OwlReady which is python 3 based ontology manipulation tool.
-Documentation - http://pythonhosted.org/Owlready/
+2. [OwlReady](http://pythonhosted.org/Owlready/) which is python 3 based ontology manipulation tool.
 
 3. NLTK tool kit which required to access WordNet synset module 
-from nltk.corpus import wordnet as wn
-wn.synsets('flu', pos=wn.NOUN)
+```python
+>>>from nltk.corpus import wordnet as wn
+>>>wn.synsets('flu', pos=wn.NOUN)
 [Synset('influenza.n.01')]
-
+```
 
 
