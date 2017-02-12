@@ -14,7 +14,7 @@ str4 = 'droplets spreads flu viruses mainly'
 headers = { 'Content' : 'text/plain' }
 
 #print status POST request
-r = requests.post("http://localhost:7777/", data=str1 , headers = headers)
+r = requests.post("http://localhost:7777/", data=str3 , headers = headers)
 
 print(r.status_code, r.reason)
 print(r.text)
@@ -39,7 +39,7 @@ def treeSystem(root):
         print(rootObj)
         for num in range(0, len(root[rootObj])):
             print(
-                "Index : " + str(root[rootObj][num]['index']) + ", POS : " + root[rootObj][num]['pos'] + ", Token : " +
+                "Index : " + str(root[rootObj][num]['index']) + ", POS : " + root[rootObj][num]['pos'] + ", Label : " + root[rootObj][num]['label'] + ", Token : " +
                 root[rootObj][num]['token'])
             if(root[rootObj][num]['label']=='NOUN'):
                 nounPhrases.append(root[rootObj][num]['token'])

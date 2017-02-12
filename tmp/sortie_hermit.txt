@@ -1,0 +1,12 @@
+SubClassOf( <http://www.semanticweb.org/intel.owl#SubDrug> <http://www.semanticweb.org/intel.owl#Drug> )
+
+
+
+Type( <http://www.semanticweb.org/intel.owl#newTestRangeInstance> <http://www.semanticweb.org/intel.owl#TestRangeClass> )
+Type( <http://www.semanticweb.org/intel.owl#ing01> <http://www.w3.org/2002/07/owl#Thing> )
+Type( <http://www.semanticweb.org/intel.owl#my_drug> <http://www.semanticweb.org/intel.owl#Drug> )
+Type( <http://www.semanticweb.org/intel.owl#testInstance> <http://www.semanticweb.org/intel.owl#TestClass> )
+Type( <http://www.semanticweb.org/intel.owl#rangeSetter> <http://www.semanticweb.org/intel.owl#TestRangeClass> )
+Type( <http://www.semanticweb.org/intel.owl#acetaminophen> <http://www.semanticweb.org/intel.owl#Ingredient> )
+Type( <http://www.semanticweb.org/intel.owl#testRangeInstance> <http://www.semanticweb.org/intel.owl#TestRangeClass> )
+
