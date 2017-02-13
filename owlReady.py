@@ -14,9 +14,11 @@ class OntologyMaker:
     # print(onto.dataTypeClassTester)
 
     mainClasses = ['Disease','Cure','Cause','Prevention','Symptom','Treatment']
-    mainProperties = [['dataProp','Disease','Prevention',"dataProp"]]
+    mainProperties = [['dataProp','Disease','Prevention'],['has_cause','Disease','Symptom']]
 
-    classifiedWords = [['influenza','Disease'],['HIV','Disease']]
+    classifiedWords = [['influenza','Disease'],['HIV','Disease'],['arthritis','Disease'],['immune_system_dysfunction','Symptom']]
+
+    relationshipSet = [['arthritis','has_cause','immune_system_dysfunction']]
 
 
 
@@ -48,28 +50,62 @@ class OntologyMaker:
                         print('New Instance Created ' + str(eachWord[0]))
         print('updateClassifications')
 
+    def relationshipBuilder(relationshipSet,onto,ontoName):
+
+
+        print("relationshipBuilder Executed")
+        for eachRelation in relationshipSet:
+            eachRelationName = str(ontoName + "." + eachRelation[0])
+            for thisInstance in onto.instances:
+                if eachRelation[0] == str(thisInstance):
+                    print("eachRelation 0 "+ str(eachRelation[0]))
+                    subject = thisInstance
+                if eachRelation[2] == str(thisInstance):
+                    print("eachRelation 2 " + str(eachRelation[2]))
+                    object = thisInstance
+            for thisProperty in onto.properties:
+                if eachRelation[1] == str(thisProperty):
+                    print("eachRelation 1 " + str(eachRelation[1]))
+                    predicate = thisProperty
+                    print(predicate)
+                    # predicate.append(object)
+
+            method = str(predicate)
+            getattr(subject, method).append(object)
+
+            # subject.has_cause.append(object)
+
+
+
+
+        # my_drug.has_for_ingredient.append(acetaminophen)
+        print()
+
 
     updateClassifications(classifiedWords,onto,ontoName)
     ClassDefiner(mainClasses,onto,ontoName)
     PropertyDefiner(mainProperties,onto, ontoName)
+    relationshipBuilder(relationshipSet,onto,ontoName)
     # print(onto.classes)
-    # print(onto.properties)
+    print(onto.properties)
     print(onto.instances)
+
+    print(onto.TestProperty.range)
 
     # onto.save()
 
-    def Relation(onto):
-
-        class Drug(Thing):
-            ontology = onto
-
-        class Ingredient(Thing):
-            ontology = onto
-
-        class has_for_ingredient(Property):
-            ontology = onto
-            domain = [Drug]
-            range = [Ingredient]
+    # def Relation(onto):
+    #
+    #     class Drug(Thing):
+    #         ontology = onto
+    #
+    #     class Ingredient(Thing):
+    #         ontology = onto
+    #
+    #     class has_for_ingredient(Property):
+    #         ontology = onto
+    #         domain = [Drug]
+    #         range = [Ingredient]
 
 
             # my_drug = Drug("my_drug")
