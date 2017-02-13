@@ -20,7 +20,7 @@ Run this server locally to access api calls using HTTP POST requests.
 
 2. [OwlReady](http://pythonhosted.org/Owlready/) which is python 3 based ontology manipulation tool.
 
-install using py -m pip install owlready
+install using :  "py -m pip install owlready"
 
 3. NLTK tool kit which required to access WordNet synset module 
 ```python
