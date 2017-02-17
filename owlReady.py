@@ -3,22 +3,24 @@ import types
 
 class OntologyMaker:
 # def mainM():
-    ont_url = "http://www.semanticweb.org/intel.owl"
+    ont_url = "http://localhost/onto/intel.owl"
     # ont_url = "http://test.org/intel.owl"
-    local_path = "C:/Users/ishara/Desktop/project/ontologies"
+    local_path = "C:/Users/ishara/Desktop/project/pyNew/ontologies"
     onto = Ontology(ont_url)
     onto_path.append(local_path)
     ontoName = str(onto.load())
 
-
-    # print(onto.dataTypeClassTester)
-
+    #Intoduce clases in list
     mainClasses = ['Disease','Cure','Cause','Prevention','Symptom','Treatment']
+
+    #Introduce properties in list with domain and range
     mainProperties = [['dataProp','Disease','Prevention'],['has_cause','Disease','Symptom']]
 
-    classifiedWords = [['influenza','Disease'],['HIV','Disease'],['arthritis','Disease'],['immune_system_dysfunction','Symptom']]
+    #Introduce word concepts(instances) with classifications
+    classifiedWords = [['influenza','Disease'],['HIV','Disease'],['arthritis','Disease'],['immune_system_dysfunction','Symptom'],['injury','Cause']]
 
-    relationshipSet = [['arthritis','has_cause','immune_system_dysfunction']]
+    #semantic template
+    relationshipSet = [['arthritis','has_cause','injury']]
 
 
 
@@ -92,7 +94,7 @@ class OntologyMaker:
 
     print(onto.TestProperty.range)
 
-    # onto.save()
+    onto.save()
 
     # def Relation(onto):
     #

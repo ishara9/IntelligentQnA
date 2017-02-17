@@ -11,10 +11,13 @@ str1 = 'Ishara is 24 years old'
 str2 = 'Ishara hasAge 24'
 str3 = 'flu viruses are spread mainly by droplets'
 str4 = 'droplets spreads flu viruses mainly'
+str5 = 'my name is Ishara'
+
+str6 = 'arthritis has cause injury' #injury has caused by arthritis
 headers = { 'Content' : 'text/plain' }
 
 #print status POST request
-r = requests.post("http://localhost:7777/", data=str3 , headers = headers)
+r = requests.post("http://localhost:7777/", data=str6 , headers = headers)
 
 print(r.status_code, r.reason)
 print(r.text)
@@ -57,9 +60,9 @@ def treeSystem(root):
 
 
 treeSystem(root)
-print(nounPhrases)
-print(verbPhrases)
-print(numbers)
+print("Concepts : "+str(nounPhrases))
+print("Relations : "+str(verbPhrases))
+# print(numbers)
 
 #### Referencing Old code pure LOGIC####
 # for rootObj in root:
