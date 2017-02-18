@@ -5,108 +5,18 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
 ]>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#" xml:base="http://www.semanticweb.org/intel.owl" ontologyIRI="http://www.semanticweb.org/intel.owl"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xml:base="http://localhost/onto/intel.owl" ontologyIRI="http://localhost/onto/intel.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
 >
-<Prefix name="" IRI="http://www.semanticweb.org/intel.owl"/>
+<Prefix name="" IRI="http://localhost/onto/intel.owl"/>
 <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
 <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
 <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
 <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-<Prefix name="intel" IRI="http://www.semanticweb.org/intel.owl"/>
+<Prefix name="intel" IRI="http://localhost/onto/intel.owl"/>
 
-<Declaration><DataProperty IRI="http://www.semanticweb.org/intel.owl#dataTyprClass"/></Declaration>
-<Declaration><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#has_for_ingredient"/></Declaration>
-<Declaration><DataProperty IRI="http://www.semanticweb.org/intel.owl#TestDataProperty"/></Declaration>
-<Declaration><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#can_prevent_by2"/></Declaration>
-<Declaration><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#dataTypeClassTester"/></Declaration>
-<Declaration><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#TestProperty"/></Declaration>
-<Declaration><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#dataProp"/></Declaration>
-<Declaration><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#has_cause"/></Declaration>
-<Declaration><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#has_location"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#Cure"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#Cause"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#SubDrug"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#TestClass"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#TestRangeClass"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#Prevention"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#Symptom"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#Treatment"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#Disease"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#Drug"/></Declaration>
-<Declaration><Class IRI="http://www.semanticweb.org/intel.owl#Ingredient"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#acetaminophen"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#my_drug"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#ing01"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#testInstance"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#testRangeInstance"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#newTestRangeInstance"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#rangeSetter"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#influenza"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#HIV"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#arthritis"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#immune_system_dysfunction"/></Declaration>
-<Declaration><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#injury"/></Declaration>
-
-<DataPropertyRange><DataProperty IRI="http://www.semanticweb.org/intel.owl#dataTyprClass"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
-
-<ObjectPropertyDomain><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#has_for_ingredient"/><Class IRI="http://www.semanticweb.org/intel.owl#Drug"/></ObjectPropertyDomain>
-<ObjectPropertyRange><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#has_for_ingredient"/><Class IRI="http://www.semanticweb.org/intel.owl#Ingredient"/></ObjectPropertyRange>
-
-<DataPropertyRange><DataProperty IRI="http://www.semanticweb.org/intel.owl#TestDataProperty"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
-
-
-
-<ObjectPropertyDomain><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#TestProperty"/><Class IRI="http://www.semanticweb.org/intel.owl#TestClass"/></ObjectPropertyDomain>
-<ObjectPropertyRange><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#TestProperty"/><Class IRI="http://www.semanticweb.org/intel.owl#TestRangeClass"/></ObjectPropertyRange>
-
-
-
-
-
-
-<SubClassOf><Class IRI="http://www.semanticweb.org/intel.owl#SubDrug"/><Class IRI="http://www.semanticweb.org/intel.owl#Drug"/></SubClassOf>
-
-
-
-
-
-
-
-
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#Ingredient"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#acetaminophen"/></ClassAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#Drug"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#my_drug"/></ClassAssertion>
-<ObjectPropertyAssertion><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#has_for_ingredient"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#my_drug"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#acetaminophen"/></ObjectPropertyAssertion>
-
-<ClassAssertion><Class IRI="http://www.w3.org/2002/07/owl#Thing"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#ing01"/></ClassAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#TestClass"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#testInstance"/></ClassAssertion>
-<ObjectPropertyAssertion><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#dataTypeClassTester"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#testInstance"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#rangeSetter"/></ObjectPropertyAssertion>
-<ObjectPropertyAssertion><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#TestProperty"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#testInstance"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#testRangeInstance"/></ObjectPropertyAssertion>
-<ObjectPropertyAssertion><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#TestProperty"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#testInstance"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#newTestRangeInstance"/></ObjectPropertyAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#TestRangeClass"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#testRangeInstance"/></ClassAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#TestRangeClass"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#newTestRangeInstance"/></ClassAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#TestRangeClass"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#rangeSetter"/></ClassAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#Disease"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#influenza"/></ClassAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#Disease"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#HIV"/></ClassAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#Disease"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#arthritis"/></ClassAssertion>
-<ObjectPropertyAssertion><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#has_cause"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#arthritis"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#immune_system_dysfunction"/></ObjectPropertyAssertion>
-<ObjectPropertyAssertion><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#has_cause"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#arthritis"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#injury"/></ObjectPropertyAssertion>
-<ObjectPropertyAssertion><ObjectProperty IRI="http://www.semanticweb.org/intel.owl#has_cause"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#arthritis"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#injury"/></ObjectPropertyAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#Symptom"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#immune_system_dysfunction"/></ClassAssertion>
-
-<ClassAssertion><Class IRI="http://www.semanticweb.org/intel.owl#Cause"/><NamedIndividual IRI="http://www.semanticweb.org/intel.owl#injury"/></ClassAssertion>
 
 </Ontology>
