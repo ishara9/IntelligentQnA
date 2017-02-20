@@ -30,3 +30,11 @@ install using :  "py -m pip install owlready"
 ```
 
 
+#FileTransfer Module
+
+saved ontology files write(update) top of existing hosted files.
+key.key file consist with hex encoded password which will be used to ftp connection Login.
+
+ontology files are hosted at domain "http://srilankasquash.com/projects/onto/beyond.owl" 
+
+
