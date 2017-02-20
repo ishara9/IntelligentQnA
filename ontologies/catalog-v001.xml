@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1487232799381" name="http://www.semanticweb.org/beyond.owl" uri="beyond.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1487232799381" name="http://www.semanticweb.org/intel.owl" uri="intel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1487588358116" name="duplicate:http://localhost/onto/intel.owl" uri="intel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1487588358116" name="duplicate:http://localhost/onto/intel.owl" uri="test.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1487588358116" name="duplicate:http://localhost/onto/intel.owl" uri="test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1487588358116" name="duplicate:http://localhost/onto/intel.rdf" uri="intelowl.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1487588358116" name="duplicate:http://localhost/onto/intel.rdf" uri="test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1487588358116" name="duplicate:http://www.semanticweb.org/beyond.owl" uri="beyond.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1487588358116" name="duplicate:http://www.semanticweb.org/beyond.owl" uri="beyond2.owl"/>
     </group>
 </catalog>

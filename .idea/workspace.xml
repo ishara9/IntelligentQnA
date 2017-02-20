@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88ec82a1-2288-49f9-8bb3-5281fb69141c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpTransfer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Owl2rdfConvc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sparqlTest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ftpTransfer.py" afterPath="$PROJECT_DIR$/ftpTransfer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ontologies/beyond.owl" afterPath="$PROJECT_DIR$/ontologies/beyond.owl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ontologies/catalog-v001.xml" afterPath="$PROJECT_DIR$/ontologies/catalog-v001.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ontologies/intel.owl" afterPath="$PROJECT_DIR$/ontologies/intel.owl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/owlTestHost.py" afterPath="$PROJECT_DIR$/owlTestHost.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/owlReady.py" afterPath="$PROJECT_DIR$/owlReady.py" />
     </list>
     <ignored path="pyNew.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="owlReady.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="owlReady.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/owlReady.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="858">
+              <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -53,21 +57,41 @@
       <file leaf-file-name="owlTestHost.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/owlTestHost.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ftpTransfer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sparqlTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sparqlTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ftpTransfer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ftpTransfer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Owl2rdfConvc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Owl2rdfConvc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,18 +119,23 @@
         <option value="$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/TestQuestions.py" />
         <option value="$PROJECT_DIR$/../Classifier/FinalQuestionClassifier.py" />
         <option value="$PROJECT_DIR$/RequestHandler.py" />
-        <option value="$PROJECT_DIR$/owlReady.py" />
-        <option value="$PROJECT_DIR$/owlTestHost.py" />
         <option value="$PROJECT_DIR$/ftpTest.py" />
+        <option value="$PROJECT_DIR$/owlTestHost.py" />
+        <option value="$PROJECT_DIR$/owlReady.py" />
+        <option value="$PROJECT_DIR$/sparqlTest.py" />
+        <option value="$PROJECT_DIR$/convertAutomatically.py" />
+        <option value="$PROJECT_DIR$/owl2rdf.py" />
+        <option value="$PROJECT_DIR$/owlc2rdf.py" />
+        <option value="$PROJECT_DIR$/Owl2rdf.py" />
+        <option value="$PROJECT_DIR$/Owl2rdfConvc.py" />
         <option value="$PROJECT_DIR$/ftpTransfer.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="-8" />
     <option name="width" value="1932" />
-    <option name="height" value="1048" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -153,8 +182,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,57 +192,6 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Python.ftpTransfer">
-    <configuration default="false" name="owlReady" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyNew" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/owlReady.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="RequestHandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyNew" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RequestHandler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="owlTestHost" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyNew" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/owlTestHost.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="ftpTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,6 +222,57 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pyNew" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ftpTransfer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="sparqlTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyNew" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sparqlTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="owlReady" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyNew" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/owlReady.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="convertAutomatically" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyNew" />
+      <option name="SCRIPT_NAME" value="C:\Users\ishara\Desktop\project\pyNew\Owl2rdfConvc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -383,19 +412,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.owlReady" />
-      <item index="1" class="java.lang.String" itemvalue="Python.RequestHandler" />
-      <item index="2" class="java.lang.String" itemvalue="Python.owlTestHost" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ftpTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ftpTransfer" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ftpTest" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ftpTransfer" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sparqlTest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.owlReady" />
+      <item index="4" class="java.lang.String" itemvalue="Python.convertAutomatically" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.ftpTransfer" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ftpTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.owlTestHost" />
-        <item index="3" class="java.lang.String" itemvalue="Python.RequestHandler" />
-        <item index="4" class="java.lang.String" itemvalue="Python.owlReady" />
+        <item index="1" class="java.lang.String" itemvalue="Python.convertAutomatically" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sparqlTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.owlReady" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ftpTest" />
       </list>
     </recent_temporary>
   </component>
@@ -424,15 +453,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
+    <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10083595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10031348" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38187703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38604143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -471,20 +500,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Classifier/FinalQuestionClassifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Classifier/cassifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/site-packages/owlready/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1819">
@@ -848,30 +863,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/owlReady.py">
+    <entry file="file://$PROJECT_DIR$/owlTestHost.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/owlTestHost.py">
+    <entry file="file://$PROJECT_DIR$/sparqlTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ftpTransfer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Owl2rdfConvc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/owlReady.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>

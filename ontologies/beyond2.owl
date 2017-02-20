@@ -1,0 +1,569 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/beyond.owl"
+     xml:base="http://www.semanticweb.org/beyond.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:beyond1="http://www.semanticweb.org/beyond.owl#"
+     xmlns:beyond="http://www.semanticweb.org/kalani/ontologies/beyond.rdf#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/beyond.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#can_prevent_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/beyond.owl#can_prevent_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/beyond.owl#disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/beyond.owl#prevention"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">can_prevent_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#has_cause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/beyond.owl#has_cause">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/beyond.owl#disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_cause</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#has_symptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/beyond.owl#has_symptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/beyond.owl#disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_symptom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#has_treatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/beyond.owl#has_treatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/beyond.owl#disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_treatment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/beyond.owl#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/beyond.owl#disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#cause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/beyond.owl#cause">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cause</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/beyond.owl#disease">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/beyond.owl#can_prevent_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/beyond.owl#prevention"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/beyond.owl#has_cause"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/beyond.owl#has_symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/beyond.owl#has_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#prevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/beyond.owl#prevention">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prevention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/beyond.owl#symptom">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/beyond.owl#treatment">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#abnormal_metabolism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#abnormal_metabolism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abnormal_metabolism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#arthritis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#arthritis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#disease"/>
+        <beyond1:can_prevent_by rdf:resource="http://www.semanticweb.org/beyond.owl#maintaining_an_appropriate_body_weight"/>
+        <beyond1:can_prevent_by rdf:resource="http://www.semanticweb.org/beyond.owl#protecting_your_joints_from_injuries"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#abnormal_metabolism"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#immune_system_dysfunction"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#infections"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#inheritance"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#injury"/>
+        <beyond1:has_symptom rdf:resource="http://www.semanticweb.org/beyond.owl#pain_and_stiffness_in_and_around_one_or_more_joints"/>
+        <beyond1:has_treatment rdf:resource="http://www.semanticweb.org/beyond.owl#medications"/>
+        <beyond1:has_treatment rdf:resource="http://www.semanticweb.org/beyond.owl#physical_or_occupational_therapy"/>
+        <beyond1:has_treatment rdf:resource="http://www.semanticweb.org/beyond.owl#splints_or_joint_assistive_aids"/>
+        <beyond1:has_treatment rdf:resource="http://www.semanticweb.org/beyond.owl#surgery"/>
+        <beyond1:has_treatment rdf:resource="http://www.semanticweb.org/beyond.owl#weight_loss"/>
+        <beyond1:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The word arthritis actually means joint inflammation, but the term has acquired a wider meaning. In public health, arthritis is used as a shorthand term for arthritis and other rheumatic conditions—a label for the more than 100 rheumatic diseases and conditions that affect joints, the tissues which surround joints and other connective tissue. The pattern, severity, and location of symptoms can vary depending on the specific form of the disease. Typically, rheumatic conditions are characterized by pain and stiffness in and around one or more joints. The symptoms can develop gradually or suddenly. Certain rheumatic conditions can also involve the immune system and various internal organs of the body.</beyond1:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arthritis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#blood_glucose_testing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#blood_glucose_testing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood_glucose_testing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#cough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#cough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#diabetes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#disease"/>
+        <beyond1:can_prevent_by rdf:resource="http://www.semanticweb.org/beyond.owl#get_plenty_of_fiber"/>
+        <beyond1:can_prevent_by rdf:resource="http://www.semanticweb.org/beyond.owl#loss_weight"/>
+        <beyond1:can_prevent_by rdf:resource="http://www.semanticweb.org/beyond.owl#regular_physical_activity"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#genes_and_family_history"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#insulin_resistance"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#overweight"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#physical_activity"/>
+        <beyond1:has_cause rdf:resource="http://www.semanticweb.org/beyond.owl#unidentified_virus,stimulating_an_immune_attack_against_the_beta_cells_of_the_pancreas_and_produce_insulin"/>
+        <beyond1:has_symptom rdf:resource="http://www.semanticweb.org/beyond.owl#excessive_thirst"/>
+        <beyond1:has_symptom rdf:resource="http://www.semanticweb.org/beyond.owl#extreme_hunger"/>
+        <beyond1:has_symptom rdf:resource="http://www.semanticweb.org/beyond.owl#frequent_urination"/>
+        <beyond1:has_symptom rdf:resource="http://www.semanticweb.org/beyond.owl#more_infections_than_usual"/>
+        <beyond1:has_symptom rdf:resource="http://www.semanticweb.org/beyond.owl#sores_that_are_slow_to_heal"/>
+        <beyond1:has_symptom rdf:resource="http://www.semanticweb.org/beyond.owl#sudden_vision_changes"/>
+        <beyond1:has_symptom rdf:resource="http://www.semanticweb.org/beyond.owl#unexplained_weight_loss"/>
+        <beyond1:has_symptom rdf:resource="http://www.semanticweb.org/beyond.owl#very_dry_skin"/>
+        <beyond1:has_treatment rdf:resource="http://www.semanticweb.org/beyond.owl#blood_glucose_testing"/>
+        <beyond1:has_treatment rdf:resource="http://www.semanticweb.org/beyond.owl#healthy_eating"/>
+        <beyond1:has_treatment rdf:resource="http://www.semanticweb.org/beyond.owl#insulin_injection"/>
+        <beyond1:has_treatment rdf:resource="http://www.semanticweb.org/beyond.owl#physical_activity"/>
+        <beyond1:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes is a disease in which blood glucose levels are above normal. Most of the food we eat is turned into glucose, or sugar, for our bodies to use for energy. The pancreas, an organ that lies near the stomach, makes a hormone called insulin to help glucose get into the cells of our bodies. When you have diabetes, your body either doesn&apos;t make enough insulin or can&apos;t use its own insulin as well as it should. This causes sugar to build up in your blood.
+
+Diabetes can cause serious health complications including heart disease, blindness, kidney failure, and lower-extremity amputations. Diabetes is the seventh leading cause of death in the United States.</beyond1:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diabetes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#excessive_thirst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#excessive_thirst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">excessive_thirst</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#extreme_hunger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#extreme_hunger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme_hunger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#fever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#fever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#frequent_urination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#frequent_urination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">frequent_urination</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#genes_and_family_history -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#genes_and_family_history">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genes_and_family_history</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#get_plenty_of_fiber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#get_plenty_of_fiber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#prevention"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">get_plenty_of_fiber</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#go_for_whole_grains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#go_for_whole_grains">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#prevention"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">go_for_whole_grains</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#healthy_eating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#healthy_eating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthy_eating</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#immune_system_dysfunction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#immune_system_dysfunction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune_system_dysfunction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#infections -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#infections">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infections</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#influenza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#influenza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#inheritance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#inheritance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheritance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#injury -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#injury">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injury</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#insulin_injection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#insulin_injection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insulin_injection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#insulin_resistance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#insulin_resistance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insulin_resistance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#loss_weight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#loss_weight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#prevention"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loss_weight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#maintaining_an_appropriate_body_weight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#maintaining_an_appropriate_body_weight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#prevention"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maintaining_an_appropriate_body_weight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#medications -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#medications">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medications</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#more_infections_than_usual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#more_infections_than_usual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">more_infections_than_usual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#overweight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#overweight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overweight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#pain_and_stiffness_in_and_around_one_or_more_joints -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#pain_and_stiffness_in_and_around_one_or_more_joints">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pain_and_stiffness_in_and_around_one_or_more_joints</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#physical_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#physical_activity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical_activity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#physical_inactivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#physical_inactivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical_inactivity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#physical_or_occupational_therapy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#physical_or_occupational_therapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical_or_occupational_therapy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#protecting_your_joints_from_injuries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#protecting_your_joints_from_injuries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#prevention"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protecting_your_joints_from_injuries</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#regular_physical_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#regular_physical_activity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#prevention"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regular_physical_activity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#sore_throat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#sore_throat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#sores_that_are_slow_to_heal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#sores_that_are_slow_to_heal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sores_that_are_slow_to_heal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#splints_or_joint_assistive_aids -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#splints_or_joint_assistive_aids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splints_or_joint_assistive_aids</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#sudden_vision_changes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#sudden_vision_changes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sudden_vision_changes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#surgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#surgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#unexplained_weight_loss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#unexplained_weight_loss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unexplained_weight_loss</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#very_dry_skin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#very_dry_skin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very_dry_skin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#weight_loss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#weight_loss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#treatment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight_loss</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/beyond.owl#unidentified_virus,stimulating_an_immune_attack_against_the_beta_cells_of_the_pancreas_and_produce_insulin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/beyond.owl#unidentified_virus,stimulating_an_immune_attack_against_the_beta_cells_of_the_pancreas_and_produce_insulin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/beyond.owl#cause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unidentified_virus,stimulating_an_immune_attack_against_the_beta_cells_of_the_pancreas_and_produce_insulin</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

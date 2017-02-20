@@ -2,8 +2,12 @@ import ftplib
 import base64
 import os
 import codecs
+import Owl2rdfConvc
 
 filename = "beyond.owl"
+#convert owl file into rdf format
+x = Owl2rdfConvc.Owl2rdf(filename)
+
 UID = "srilanakasquash"
 
 key = open("../key.key","r")

@@ -92,7 +92,7 @@ class OntologyMaker:
     print(onto.properties)
     print(onto.instances)
 
-    print(onto.TestProperty.range)
+    # print(onto.TestProperty.range)
 
     onto.save()
 
